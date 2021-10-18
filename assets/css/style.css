@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #6cb7f8;
+  border-top-color: #bfe0fd;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* =============== Scrollbar ================== */
+html::-webkit-scrollbar {
+  width: 0.3em;
+  height: 1em;
+}
+html::-webkit-scrollbar-track {
+  border-radius: 100vw;
+  margin-block: 0.5em;
+  scroll-margin-inline: 2em;
+}
+html::-webkit-scrollbar-track:hover {
+  background: whitesmoke;
+}
+html::-webkit-scrollbar-thumb {
+  background: #b6ccfe;
+  border: 0.25em solid #b6ccfe;
+  border-radius: 100vw;
+}
+html::-webkit-scrollbar-thumb:hover {
+  background: #8aadff;
+  border: 0.25em solid #8aadff;
+}
+@supports (scrollbar-color: red blue) {
+  * {
+    scrollbar-color: #b6ccfe white;
+    scrollbar-width: auto;
+  }
+}
+
+/* -----------------------------NAVBAR------------------------------- */
+.logo {
+  width: 10vw;
+}
+.nav-item {
+  margin-right: 1.3em;
+  font-weight: 500;
+}
+.nav-link:hover::after {
+  content: "";
+  display: block;
+  border-bottom: 3px solid #2163ab;
+  width: 50%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+/* ----------------------------- END NAVBAR------------------------------- */
+
+/* ------------------ Carousel ------------------------------ */
+.slide-images {
+  width: 100vw;
+  height: 100vh;
+}
+.carousel-item:before {
+  content: "";
+  background: rgba(16, 16, 16, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.carousel-caption {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 11vw;
+  padding: 0 5em;
+}
+.carousel-caption h5 {
+  font-size: 2.5vw;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.carousel-caption p {
+  margin-top: 3vw;
+  padding: 0 2em;
+  font-weight: 200;
+  text-align: center;
+  font-size: 1.3vw;
+}
+.carousel-caption .btn-primary {
+  margin-top: 5vw;
+  padding: 10px;
+  width: 12vw;
+  border-radius: 2em;
+  font-size: 1.5vw;
+}
+
+/* ------------------------Mobile-------------------------------------- */
+@media (max-width: 429px) {
+  /* -----------------------------NAVBAR------------------------------- */
+  .logo {
+    width: 30vw;
+  }
+  .navbar-nav {
+    font-size: 4vw;
+  }
+  .nav-item {
+    margin-top: 5px;
+  }
+  .fa-stream {
+    color: #2163ab;
+    font-size: 6vw;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+  /* .nav-link:hover {
+    background-color: #2163ab;
+  } */
+  /* -----------------------------NAVBAR END------------------------------- */
+
+  /* -------------------------Carousel-------------------------------- */
+  .carousel-item:before {
+    content: "";
+    background: rgba(16, 16, 16, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .carousel-caption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 7vw;
+    padding: 0;
+  }
+  .carousel-caption h5 {
+    padding: 0 -3em;
+    font-size: 7vw;
+    white-space: pre-wrap;
+    text-transform: uppercase;
+  }
+  .carousel-caption p {
+    margin-top: 4vw;
+    font-weight: 200;
+    font-size: 3vw;
+  }
+  .carousel-caption .btn-primary {
+    margin-top: 10vw;
+    padding: 10px;
+    width: 35vw;
+    border-radius: 2em;
+    font-size: 5vw;
+  }
+  .slide-images {
+    width: 280vw;
+    height: 91.9vh;
+  }
+  /* -------------------------Carousel END-------------------------------- */
+}
