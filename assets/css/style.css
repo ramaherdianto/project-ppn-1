@@ -159,7 +159,6 @@ html::-webkit-scrollbar-thumb:hover {
 }
 .glide-service {
   padding: 0 5vw;
-  width: 75vw;
 }
 
 /* ------------------------Mobile-------------------------------------- */
@@ -238,5 +237,8 @@ html::-webkit-scrollbar-thumb:hover {
   }
   .our-service p {
     padding: 0 40px;
+  }
+  .glide-service{
+    margin-top: 40px;
   }
 }
