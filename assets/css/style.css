@@ -211,4 +211,15 @@ html::-webkit-scrollbar-thumb:hover {
     height: 91.9vh;
   }
   /* -------------------------Carousel END-------------------------------- */
+  
+  /* Slider Service */
+  .foto-service{
+    width: 100%;
+  }
+  .our-service{
+    margin-top: 40px;
+  }
+  .our-service p{
+    padding: 0 40px;
+  }
 }
