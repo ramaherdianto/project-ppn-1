@@ -88,12 +88,14 @@ html::-webkit-scrollbar-thumb:hover {
 /* -----------------------------NAVBAR------------------------------- */
 .logo {
   width: 10vw;
+  padding-left: 2vw;
 }
 .nav-item {
   margin-right: 1.3em;
   font-weight: 500;
 }
-.nav-link:hover::after {
+.nav-link:hover::after,
+.dropdown-item:hover::after {
   content: "";
   display: block;
   border-bottom: 3px solid #2163ab;
@@ -143,6 +145,21 @@ html::-webkit-scrollbar-thumb:hover {
   width: 12vw;
   border-radius: 2em;
   font-size: 1.5vw;
+}
+
+/* Slider Service */
+.foto-service {
+  width: 100%;
+}
+.our-service {
+  margin-top: 40px;
+}
+.our-service p {
+  padding: 0 40px;
+}
+.glide-service {
+  padding: 0 5vw;
+  width: 75vw;
 }
 
 /* ------------------------Mobile-------------------------------------- */
@@ -211,15 +228,15 @@ html::-webkit-scrollbar-thumb:hover {
     height: 91.9vh;
   }
   /* -------------------------Carousel END-------------------------------- */
-  
+
   /* Slider Service */
-  .foto-service{
+  .foto-service {
     width: 100%;
   }
-  .our-service{
+  .our-service {
     margin-top: 40px;
   }
-  .our-service p{
+  .our-service p {
     padding: 0 40px;
   }
 }
