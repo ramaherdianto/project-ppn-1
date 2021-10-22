@@ -17,10 +17,15 @@
     new Splide('.splide', {
       type: 'loop',
       perPage: 3,
-      // width: '80%',
-      // fixedHeight: '20vw',
-      gap: '1rem',
-      pagination: true,
+      breakpoints: {
+        429: {
+          perPage: 2,
+          fixedHeight: '30vw',
+        },
+      },
+      width: '80%',
+      gap: '2vw',
+      pagination: false,
       autoplay: true,
       interval: 3000
     }).mount();
