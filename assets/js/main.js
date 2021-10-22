@@ -20,9 +20,10 @@
       breakpoints: {
         429: {
           perPage: 2,
-          fixedHeight: '30vw',
+          fixedHeight: '40vw',
         },
       },
+      fixedHeight: '28vw',
       width: '80%',
       gap: '2vw',
       pagination: false,

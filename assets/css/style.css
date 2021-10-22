@@ -147,6 +147,61 @@ html::-webkit-scrollbar-thumb:hover {
   font-size: 1.5vw;
 }
 
+/* ------------------------Slider Service------------------------------- */
+.slider-service{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.our-service h3{
+  font-size: 3vw;
+  font-weight: 700;
+}
+.our-service h3::after{
+  content: "";
+  display: block;
+  border-bottom: 3px solid #2163ab;
+  width: 20%;
+  margin: auto;
+  padding-bottom: 5px;
+  margin-bottom: -8px;
+}
+.our-service p, .bottom-service{
+  margin-top: 30px;
+  font-size: 1.5vw;
+}
+.splide{
+  margin-top: 60px;
+}
+.splide__slide{
+  background-color: aqua;
+}
+.splide__arrows .splide__arrow{
+  border-radius: 0;
+  background-color: transparent;
+}
+.splide__arrows .splide__arrow--prev{
+  left: -3rem;
+  color: #2163ab;
+}
+.splide__arrows .splide__arrow--next{
+  right: -3rem;
+  color: #2163ab;
+}
+.bottom-service{
+  text-align: justify;
+  padding: 0 50vw 0 10vw;
+  margin-top: 60px;
+}
+.bottom-service p{
+  line-height: 2;
+}
+.bottom-service button{
+  margin-top: 20px;
+}
+
 /* ------------------------Mobile-------------------------------------- */
 @media (max-width: 429px) {
   /* -----------------------------NAVBAR------------------------------- */
@@ -216,8 +271,7 @@ html::-webkit-scrollbar-thumb:hover {
   
 /* ------------------------Slider Service------------------------------- */
   .slider-service{
-    /* margin-top: 40px; */
-    margin:40px 0;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -255,9 +309,16 @@ html::-webkit-scrollbar-thumb:hover {
   }
   .splide__arrows .splide__arrow--prev{
     left: -2rem;
+    color: #2163ab;
   }
   .splide__arrows .splide__arrow--next{
     right: -2rem;
     color: #2163ab;
+  }
+  .bottom-service{
+    text-align: center;
+  }
+  .bottom-service button{
+    margin-top: 30px;
   }
 }
