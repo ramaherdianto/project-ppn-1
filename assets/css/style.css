@@ -223,7 +223,7 @@ html::-webkit-scrollbar-thumb:hover {
     flex-direction: column;
     align-items: center;
   }
-  .our-service{
+  .our-service, .bottom-service{
     padding: 0 10vw;
   }
   .our-service h3{
@@ -239,7 +239,7 @@ html::-webkit-scrollbar-thumb:hover {
     padding-bottom: 5px;
     margin-bottom: -8px;
   }
-  .our-service p{
+  .our-service p, .bottom-service{
     margin-top: 30px;
     font-size: 3.9vw;
   }
