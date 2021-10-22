@@ -13,13 +13,3 @@
     }
   });
 })(jQuery);
-
-// ========= Slider
-new Glide(".glide", {
-  type: "carousel",
-  autoplay: 2000,
-  hoverpause: true,
-  animationDuration: 1000,
-  animationTimingFunc: "ease-in-out",
-  perView: 2,
-}).mount();

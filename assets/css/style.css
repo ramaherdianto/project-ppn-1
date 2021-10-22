@@ -147,20 +147,6 @@ html::-webkit-scrollbar-thumb:hover {
   font-size: 1.5vw;
 }
 
-/* Slider Service */
-.foto-service {
-  width: 100%;
-}
-.our-service {
-  margin-top: 40px;
-}
-.our-service p {
-  padding: 0 40px;
-}
-.glide-service {
-  padding: 0 5vw;
-}
-
 /* ------------------------Mobile-------------------------------------- */
 @media (max-width: 429px) {
   /* -----------------------------NAVBAR------------------------------- */
@@ -228,32 +214,5 @@ html::-webkit-scrollbar-thumb:hover {
   }
   /* -------------------------Carousel END-------------------------------- */
 
-  /* Slider Service */
-  .foto-service {
-    width: 100%;
-  }
-  .our-service {
-    margin-top: 40px;
-    
-  }
-  .our-service h2{
-    font-size: 7.9vw;
-  }
-  .our-service h2::after{
-    content: "";
-    display: block;
-    border-bottom: 3px solid #2163ab;
-    width: 20%;
-    margin: auto;
-    padding-bottom: 5px;
-    margin-bottom: -8px;
-  }
-  .our-service p {
-    margin-top: 7vw;
-    padding: 0 40px;
-    font-size: 3.9vw;
-  }
-  .glide-service{
-    margin-top: 40px;
-  }
+  
 }
