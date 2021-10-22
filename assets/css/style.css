@@ -213,6 +213,29 @@ html::-webkit-scrollbar-thumb:hover {
     height: 91.9vh;
   }
   /* -------------------------Carousel END-------------------------------- */
-
   
+/* ------------------------Slider Service------------------------------- */
+  .slider-service{
+    margin-top: 40px;
+  }
+  .our-service{
+    padding: 0 10vw;
+  }
+  .our-service h3{
+    font-size: 6.8vw;
+    font-weight: 600;
+  }
+  .our-service h3::after{
+    content: "";
+    display: block;
+    border-bottom: 3px solid #2163ab;
+    width: 20%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+  .our-service p{
+    margin-top: 30px;
+    font-size: 3.9vw;
+  }
 }

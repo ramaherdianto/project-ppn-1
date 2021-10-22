@@ -13,3 +13,14 @@
     }
   });
 })(jQuery);
+
+    new Splide('.splide', {
+      type: 'loop',
+      perPage: 3,
+      // width: '80%',
+      // fixedHeight: '20vw',
+      gap: '1rem',
+      pagination: true,
+      autoplay: true,
+      interval: 3000
+    }).mount();
