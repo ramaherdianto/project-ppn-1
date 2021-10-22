@@ -148,18 +148,18 @@ html::-webkit-scrollbar-thumb:hover {
 }
 
 /* ------------------------Slider Service------------------------------- */
-.slider-service{
+.slider-service, .slider-clients{
   margin-top: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.our-service h3{
+.our-service h3, .our-clients h3{
   font-size: 3vw;
   font-weight: 700;
 }
-.our-service h3::after{
+.our-service h3::after, .our-clients h3::after{
   content: "";
   display: block;
   border-bottom: 3px solid #2163ab;
@@ -168,7 +168,7 @@ html::-webkit-scrollbar-thumb:hover {
   padding-bottom: 5px;
   margin-bottom: -8px;
 }
-.our-service p, .bottom-service{
+.our-service p, .bottom-service, .our-clients p{
   margin-top: 30px;
   font-size: 1.5vw;
 }
