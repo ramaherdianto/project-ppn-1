@@ -269,8 +269,8 @@ html::-webkit-scrollbar-thumb:hover {
   }
   
 /* ======================= Slider Service ======================= */
-  .slider-service, .slider-clients{
-    margin-top: 40px;
+  .slider-service{
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -319,5 +319,14 @@ html::-webkit-scrollbar-thumb:hover {
   }
   .bottom-service button{
     margin-top: 30px;
+  }
+
+  /* ======================= Slider Client ======================= */
+  .slider-clients{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
