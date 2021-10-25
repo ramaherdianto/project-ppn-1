@@ -159,7 +159,7 @@ body .navbar{
   align-items: center;
 }
 .our-service h3, .our-clients h3{
-  font-size: 3vw;
+  font-size: 2.8vw;
   font-weight: 700;
 }
 .our-service h3::after, .our-clients h3::after{
@@ -173,7 +173,7 @@ body .navbar{
 }
 .our-service p, .bottom-service, .our-clients p{
   margin-top: 30px;
-  font-size: 1.5vw;
+  font-size: 1.2vw;
 }
 .splide{
   margin-top: 60px;
