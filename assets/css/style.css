@@ -90,6 +90,9 @@ html::-webkit-scrollbar-thumb:hover {
   width: 10vw;
   padding-left: 2vw;
 }
+body .navbar{
+  padding: 0.8vw 4vw;
+}
 .nav-item {
   margin-right: 1.3em;
   font-weight: 500;
@@ -208,6 +211,9 @@ html::-webkit-scrollbar-thumb:hover {
   /* ===================== NAVBAR ===================== */
   .logo {
     width: 30vw;
+  }
+  body .navbar{
+    padding: 0.8vw 3vw;
   }
   .navbar-nav {
     font-size: 4vw;
