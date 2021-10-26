@@ -314,11 +314,11 @@ body .navbar{
     background-color: transparent;
   }
   .splide__arrows .splide__arrow--prev{
-    left: -2rem;
+    left: -9vw;
     color: #2163ab;
   }
   .splide__arrows .splide__arrow--next{
-    right: -2rem;
+    right: -9vw;
     color: #2163ab;
   }
   .bottom-service{
