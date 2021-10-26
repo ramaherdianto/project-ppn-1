@@ -236,7 +236,7 @@ footer .link-maps{
 }
 
 /* ------------------------Mobile-------------------------------------- */
-@media (max-width: 429px) {
+@media screen and (max-width: 429px) {
 
   /* ===================== NAVBAR ===================== */
   .logo {
