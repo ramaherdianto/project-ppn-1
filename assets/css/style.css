@@ -206,6 +206,25 @@ body .navbar{
   margin-top: 20px;
 }
 
+ /* ================= Footer ================= */
+ footer .footer{
+  margin-top: 7em;
+  background-color: #B6CCFE;
+  padding: 4vw;
+  display: flex;
+}
+footer h3{
+  font-weight: 700;
+  font-size: 2vw;
+}
+footer .maps{
+  padding-right: 10vw;
+}
+footer .link-maps{
+  color: black;
+  font-size: 1vw;
+}
+
 /* ------------------------Mobile-------------------------------------- */
 @media (max-width: 429px) {
 
@@ -338,10 +357,12 @@ body .navbar{
   }
 
   /* ================= Footer ================= */
-  footer{
+  footer .footer{
     margin-top: 7em;
     background-color: #B6CCFE;
     padding: 5vw;
+    display: flex;
+    flex-direction: column;
   }
   footer div{
     margin-top: 8vw;
