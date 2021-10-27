@@ -207,10 +207,12 @@ body .navbar{
 }
 
  /* ================= Footer ================= */
- footer .footer{
+ footer{
   margin-top: 7em;
   background-color: #B6CCFE;
-  padding: 4vw 2.8vw;
+  padding: 4vw 2.8vw 1vw 2.8vw;
+ }
+ footer .footer{
   display: flex;
   justify-content: space-around;
 }
@@ -234,7 +236,15 @@ footer .link-maps{
 .ul-flex li{
   font-size: 1.9vw;
 }
-
+.copy-right{
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.7vw;
+  text-transform: uppercase;
+}
+.copy-right p{
+  margin: 5vw 0 0 0;
+}
 /* ------------------------Mobile-------------------------------------- */
 @media screen and (max-width: 429px) {
 
@@ -367,14 +377,17 @@ footer .link-maps{
   }
 
   /* ================= Footer ================= */
-  footer .footer{
+  
+  footer{
     margin-top: 7em;
     background-color: #B6CCFE;
-    padding: 5vw;
+    padding: 8vw 5vw 2vw 5vw;
+  }
+  footer .footer{
     display: flex;
     flex-direction: column;
   }
-  footer div{
+  footer .contact, footer .website{
     margin-top: 8vw;
   }
   footer h3{
@@ -387,6 +400,7 @@ footer .link-maps{
   footer .link-maps{
     color: black;
     font-size: 3.9vw;
+    line-height: 1.7;
   }
   .ul-flex{
     display: flex;
@@ -394,5 +408,14 @@ footer .link-maps{
   }
   .ul-flex li{
     font-size: 6vw;
+  }
+  .copy-right{
+    text-align: center;
+    font-weight: 700;
+    font-size: 3vw;
+    text-transform: uppercase;
+  }
+  .copy-right p{
+    margin: 8vw 0 0 0;
   }
 } 
