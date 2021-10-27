@@ -236,6 +236,9 @@ footer .link-maps{
 .ul-flex li{
   font-size: 1.9vw;
 }
+.ul-flex li a{
+  color: #212529;
+}
 .copy-right{
   text-align: center;
   font-weight: 700;
@@ -402,12 +405,19 @@ footer .link-maps{
     font-size: 3.9vw;
     line-height: 1.7;
   }
+  .footer a:hover{
+    text-decoration: none;
+    color: black;
+  }
   .ul-flex{
     display: flex;
     gap: 5vw;
   }
   .ul-flex li{
     font-size: 6vw;
+  }
+  .ul-flex li a{
+    color: #212529;
   }
   .copy-right{
     text-align: center;

@@ -14,7 +14,7 @@
   });
 })(jQuery);
 
-// ============ Slider
+// ============ Splide service
 new Splide(".splide", {
   type: "loop",
   perPage: 3,
@@ -50,3 +50,7 @@ new Splide(".splide-client", {
   autoplay: true,
   interval: 3000,
 }).mount();
+
+// ======== Pengambilan Date()
+const year = new Date();
+document.getElementById("year").innerHTML = year.getFullYear();
