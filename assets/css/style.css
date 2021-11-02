@@ -59,39 +59,45 @@ body {
 
 /* =============== Scrollbar ================== */
 html::-webkit-scrollbar {
-  width: 0.3em;
-  height: 1em;
+  background-color: var(--white) !important;
+  width: 16px !important;
 }
 html::-webkit-scrollbar-track {
-  border-radius: 100vw;
-  margin-block: 0.5em;
-  scroll-margin-inline: 2em;
-}
-html::-webkit-scrollbar-track:hover {
-  background: whitesmoke;
+  background-color: var(--white) !important;
 }
 html::-webkit-scrollbar-thumb {
-  background: #b6ccfe;
-  border: 0.25em solid #b6ccfe;
-  border-radius: 100vw;
+  border-radius: 16px !important;
+  border: 4px solid var(--white) !important;
+  background: #2163ab;
+}
+html::-webkit-scrollbar-button {
+  display: none !important;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #2163ab !important;
+  border-radius: 16px !important;
+  border: 5px solid var(--white) !important;
+}
+.scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #4172a7 !important;
 }
 html::-webkit-scrollbar-thumb:hover {
-  background: #8aadff;
-  border: 0.25em solid #8aadff;
+  background-color: #3781d0 !important;
 }
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-color: #b6ccfe white;
+    scrollbar-color: #2163ab white;
     scrollbar-width: auto;
   }
 }
+/* ==================== End Scrollbar ================ */
 
 /* ==================== NAVBAR ======================= */
 .logo {
-  width: 10vw;
+  width: 12vw;
   padding-left: 2vw;
 }
-body .navbar{
+body .navbar {
   padding: 0.8vw 4vw;
 }
 .nav-item {
@@ -152,18 +158,21 @@ body .navbar{
 }
 
 /* ------------------------Slider Service------------------------------- */
-.slider-service, .slider-clients{
+.slider-service,
+.slider-clients {
   margin-top: 100px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
-.our-service h3, .our-clients h3{
+.our-service h3,
+.our-clients h3 {
   font-size: 2.8vw;
   font-weight: 700;
 }
-.our-service h3::after, .our-clients h3::after{
+.our-service h3::after,
+.our-clients h3::after {
   content: "";
   display: block;
   border-bottom: 3px solid #2163ab;
@@ -172,90 +181,109 @@ body .navbar{
   padding-bottom: 5px;
   margin-bottom: -8px;
 }
-.our-service p, .bottom-service, .our-clients p{
+.our-service p,
+.bottom-service,
+.our-clients p {
   margin-top: 30px;
   font-size: 1.2vw;
 }
-.splide{
+.splide {
   margin-top: 60px;
 }
-.splide__slide{
-  background-color: aqua;
+.splide__slide {
+  background-color: #2163ab;
 }
-.splide__arrows .splide__arrow{
+.splide__arrows .splide__arrow {
   border-radius: 0;
   background-color: transparent;
 }
-.splide__arrows .splide__arrow--prev{
+.splide__arrows .splide__arrow--prev {
   left: -3rem;
   color: #2163ab;
 }
-.splide__arrows .splide__arrow--next{
+.splide__arrows .splide__arrow--next {
   right: -3rem;
   color: #2163ab;
 }
-.bottom-service{
+.bottom-service {
   text-align: justify;
   padding: 0 50vw 0 10vw;
   margin-top: 60px;
 }
-.bottom-service p{
+.bottom-service p {
   line-height: 2;
 }
-.bottom-service button{
+.bottom-service button {
   margin-top: 20px;
 }
 
- /* ================= Footer ================= */
- footer{
+/* ================= Footer ================= */
+footer {
   margin-top: 7em;
-  background-color: #B6CCFE;
+  background-color: #b6ccfe;
   padding: 4vw 2.8vw 1vw 2.8vw;
- }
- footer .footer{
+}
+footer .footer {
   display: flex;
   justify-content: space-around;
 }
-footer h3{
+footer h3 {
   font-weight: 700;
   font-size: 2vw;
 }
-footer .link-maps{
+footer .link-maps {
   color: black;
   font-size: 1vw;
   line-height: 1.7;
 }
-.footer a:hover{
+.footer a:hover {
   text-decoration: none;
   color: black;
 }
-.ul-flex{
+.ul-flex {
   display: flex;
   gap: 2vw;
 }
-.ul-flex li{
+.ul-flex li {
   font-size: 1.9vw;
 }
-.ul-flex li a{
+.ul-flex li a {
   color: #212529;
 }
-.copy-right{
+.copy-right {
   text-align: center;
   font-weight: 700;
   font-size: 0.7vw;
   text-transform: uppercase;
 }
-.copy-right p{
+.copy-right p {
   margin: 5vw 0 0 0;
 }
+
+/* ========================= Tablet ================================== */
+@media (max-width: 992px) {
+  /* ===================== NAVBAR ===================== */
+  .logo {
+    padding-left: 0;
+    width: 12vw;
+  }
+  .fa-stream {
+    color: #2163ab;
+  }
+  .navbar-light .navbar-toggler {
+    border: none;
+  }
+
+  /* ======================= Carousel  ======================== */
+}
+
 /* ------------------------Mobile-------------------------------------- */
 @media screen and (max-width: 429px) {
-
   /* ===================== NAVBAR ===================== */
   .logo {
     width: 30vw;
   }
-  body .navbar{
+  body .navbar {
     padding: 0.8vw 3vw;
   }
   .navbar-nav {
@@ -316,23 +344,27 @@ footer .link-maps{
     width: 280vw;
     height: 91.9vh;
   }
-  
-/* ======================= Slider Service ======================= */
-  .slider-service{
+
+  /* ======================= Slider Service ======================= */
+  .slider-service {
     margin-top: 50px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
   }
-  .our-service, .bottom-service, .our-clients{
+  .our-service,
+  .bottom-service,
+  .our-clients {
     padding: 0 10vw;
   }
-  .our-service h3, .our-clients h3{
+  .our-service h3,
+  .our-clients h3 {
     font-size: 6.8vw;
     font-weight: 600;
   }
-  .our-service h3::after, .our-clients h3::after{
+  .our-service h3::after,
+  .our-clients h3::after {
     content: "";
     display: block;
     border-bottom: 3px solid #2163ab;
@@ -341,37 +373,39 @@ footer .link-maps{
     padding-bottom: 5px;
     margin-bottom: -8px;
   }
-  .our-service p, .bottom-service, .our-clients p{
+  .our-service p,
+  .bottom-service,
+  .our-clients p {
     margin-top: 30px;
     font-size: 3.9vw;
   }
-  .splide{
+  .splide {
     margin-top: 40px;
   }
-  .splide__slide{
-    background-color: aqua;
+  .splide__slide {
+    background-color: #2163ab;
   }
-  .splide__arrows .splide__arrow{
+  .splide__arrows .splide__arrow {
     border-radius: 0;
     background-color: transparent;
   }
-  .splide__arrows .splide__arrow--prev{
+  .splide__arrows .splide__arrow--prev {
     left: -9vw;
     color: #2163ab;
   }
-  .splide__arrows .splide__arrow--next{
+  .splide__arrows .splide__arrow--next {
     right: -9vw;
     color: #2163ab;
   }
-  .bottom-service{
+  .bottom-service {
     text-align: center;
   }
-  .bottom-service button{
+  .bottom-service button {
     margin-top: 30px;
   }
 
   /* ======================= Slider Client ======================= */
-  .slider-clients{
+  .slider-clients {
     margin-top: 7em;
     display: flex;
     justify-content: center;
@@ -380,52 +414,53 @@ footer .link-maps{
   }
 
   /* ================= Footer ================= */
-  
-  footer{
+
+  footer {
     margin-top: 7em;
-    background-color: #B6CCFE;
+    background-color: #b6ccfe;
     padding: 8vw 5vw 2vw 5vw;
   }
-  footer .footer{
+  footer .footer {
     display: flex;
     flex-direction: column;
   }
-  footer .contact, footer .website{
+  footer .contact,
+  footer .website {
     margin-top: 8vw;
   }
-  footer h3{
+  footer h3 {
     font-weight: 700;
     font-size: 6.8vw;
   }
-  footer .maps{
+  footer .maps {
     padding-right: 20vw;
   }
-  footer .link-maps{
+  footer .link-maps {
     color: black;
     font-size: 3.9vw;
     line-height: 1.7;
   }
-  .footer a:hover{
+  .footer a:hover {
     text-decoration: none;
     color: black;
   }
-  .ul-flex{
+  .ul-flex {
     display: flex;
     gap: 5vw;
   }
-  .ul-flex li{
+  .ul-flex li {
     font-size: 6vw;
   }
-  .ul-flex li a{
+  .ul-flex li a {
     color: #212529;
   }
-  .copy-right{
+  .copy-right {
     text-align: center;
     font-weight: 700;
     font-size: 3vw;
     text-transform: uppercase;
   }
-  .copy-right p{
+  .copy-right p {
     margin: 8vw 0 0 0;
   }
-} 
+}
