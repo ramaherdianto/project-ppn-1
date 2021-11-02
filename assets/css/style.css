@@ -130,12 +130,27 @@ body .navbar {
   left: 0;
   right: 0;
 }
-.carousel-caption {
+/* .carousel-caption {
   justify-content: center;
   align-items: center;
   position: absolute;
   top: 11vw;
   padding: 0 5em;
+} */
+.carousel-caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.carousel-caption2,
+.carousel-caption3 {
+  margin-top: 11.4vw;
 }
 .carousel-caption h5 {
   font-size: 2.5vw;
@@ -275,6 +290,21 @@ footer .link-maps {
   }
 
   /* ======================= Carousel  ======================== */
+  .carousel-caption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .carousel-caption2,
+  .carousel-caption3 {
+    margin-top: 11.4vw;
+  }
 }
 
 /* ------------------------Mobile-------------------------------------- */
@@ -313,14 +343,9 @@ footer .link-maps {
     left: 0;
     right: 0;
   }
-  .carousel-caption {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 7vw;
-    padding: 0;
+  .carousel-caption2,
+  .carousel-caption3 {
+    margin-top: 0;
   }
   .carousel-caption h5 {
     padding: 0 -3em;
@@ -342,7 +367,7 @@ footer .link-maps {
   }
   .slide-images {
     width: 280vw;
-    height: 91.9vh;
+    height: 93vh;
   }
 
   /* ======================= Slider Service ======================= */
