@@ -51,6 +51,11 @@ new Splide(".splide-client", {
   interval: 3000,
 }).mount();
 
+// ======== AOS js()
+AOS.init({
+  once: true,
+});
+
 // ======== Pengambilan Date()
 const year = new Date();
 document.getElementById("year").innerHTML = year.getFullYear();

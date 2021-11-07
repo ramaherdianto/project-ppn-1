@@ -30,7 +30,7 @@ body {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #6cb7f8;
+  border: 6px solid #b6ccfe;
   border-top-color: #bfe0fd;
   border-radius: 50%;
   width: 60px;
@@ -108,7 +108,7 @@ body .navbar {
 .dropdown-item:hover::after {
   content: "";
   display: block;
-  border-bottom: 3px solid #2163ab;
+  border-bottom: 3px solid #b6ccfe;
   width: 50%;
   margin: auto;
   padding-bottom: 5px;
@@ -164,12 +164,16 @@ body .navbar {
   text-align: center;
   font-size: 1.3vw;
 }
+
 .carousel-caption .btn-primary {
   margin-top: 5vw;
   padding: 10px;
   width: 12vw;
   border-radius: 2em;
-  font-size: 1.5vw;
+  font-size: 0.1vw;
+  color: #202020;
+  font-weight: 500;
+  background-color: #b6ccfe;
 }
 
 /* ------------------------Slider Service------------------------------- */
@@ -190,7 +194,7 @@ body .navbar {
 .our-clients h3::after {
   content: "";
   display: block;
-  border-bottom: 3px solid #2163ab;
+  border-bottom: 3px solid #b6ccfe;
   width: 20%;
   margin: auto;
   padding-bottom: 5px;
@@ -206,7 +210,7 @@ body .navbar {
   margin-top: 60px;
 }
 .splide__slide {
-  background-color: #2163ab;
+  background-color: #b6ccfe;
 }
 .splide__arrows .splide__arrow {
   border-radius: 0;
@@ -214,11 +218,11 @@ body .navbar {
 }
 .splide__arrows .splide__arrow--prev {
   left: -3rem;
-  color: #2163ab;
+  color: #b6ccfe;
 }
 .splide__arrows .splide__arrow--next {
   right: -3rem;
-  color: #2163ab;
+  color: #b6ccfe;
 }
 .bottom-service {
   text-align: justify;
@@ -361,8 +365,8 @@ footer .link-maps {
   .carousel-caption .btn-primary {
     margin-top: 10vw;
     padding: 10px;
-    width: 35vw;
-    border-radius: 2em;
+    width: 45vw;
+    border-radius: 10px;
     font-size: 5vw;
   }
   .slide-images {
@@ -392,7 +396,7 @@ footer .link-maps {
   .our-clients h3::after {
     content: "";
     display: block;
-    border-bottom: 3px solid #2163ab;
+    border-bottom: 3px solid #b6ccfe;
     width: 20%;
     margin: auto;
     padding-bottom: 5px;
@@ -408,7 +412,7 @@ footer .link-maps {
     margin-top: 40px;
   }
   .splide__slide {
-    background-color: #2163ab;
+    background-color: #b6ccfe;
   }
   .splide__arrows .splide__arrow {
     border-radius: 0;
@@ -416,17 +420,27 @@ footer .link-maps {
   }
   .splide__arrows .splide__arrow--prev {
     left: -9vw;
-    color: #2163ab;
+    color: #b6ccfe;
   }
   .splide__arrows .splide__arrow--next {
     right: -9vw;
-    color: #2163ab;
+    color: #b6ccfe;
   }
   .bottom-service {
     text-align: center;
   }
   .bottom-service button {
     margin-top: 30px;
+  }
+
+  .bottom-service .btn-primary {
+    background-color: #b6ccfe;
+    border: none;
+    width: 45vw;
+    border-radius: 10px;
+    font-size: 5vw;
+    color: #202020;
+    font-weight: 500;
   }
 
   /* ======================= Slider Client ======================= */
