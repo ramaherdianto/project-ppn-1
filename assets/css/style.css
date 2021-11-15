@@ -117,7 +117,52 @@ body .navbar {
 /* ----------------------------- END NAVBAR------------------------------- */
 
 /* ------------------ Carousel ------------------------------ */
-.slide-images {
+.carousel-item::before{
+  content: "";
+  background: rgba(0, 0, 0, 0.72);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.carousel-item img{
+  object-fit: cover;
+  object-position: center;
+  width: 100vw;
+  height: 100vh;
+
+}
+.carousel-item .carousel-caption{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 10vw;
+}
+.carousel-caption h4{
+  font-size: 2.5vw;
+  font-weight: 600;
+}
+.carousel-caption p{
+  margin-top: 20px;
+  font-size: 1.5vw;
+}
+.carousel-caption a{
+  margin-top: 20px;
+  background-color: #b6ccfe;
+  border: none;
+  width: 20vw;
+  color: #202020;
+  font-weight: 500;
+  font-size: 1.5vw;
+  border-radius: 10px;
+}
+/* .slide-images {
   width: 100vw;
   height: 100vh;
 }
@@ -129,7 +174,7 @@ body .navbar {
   top: 0;
   left: 0;
   right: 0;
-}
+} */
 /* .carousel-caption {
   justify-content: center;
   align-items: center;
@@ -137,7 +182,7 @@ body .navbar {
   top: 11vw;
   padding: 0 5em;
 } */
-.carousel-caption {
+/* .carousel-caption {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +219,7 @@ body .navbar {
   color: #202020;
   font-weight: 500;
   background-color: #b6ccfe;
-}
+} */
 
 /* ------------------------Slider Service------------------------------- */
 .slider-service,
@@ -294,16 +339,23 @@ footer .link-maps {
   }
 
   /* ======================= Carousel  ======================== */
-  .carousel-caption {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+  .carousel-caption h4{
+    font-size: 4vw;
+    font-weight: 600;
+  }
+  .carousel-caption p{
+    margin-top: 20px;
+    font-size: 2.5vw;
+  }
+  .carousel-caption a{
+    margin-top: 20px;
+    background-color: #b6ccfe;
+    border: none;
+    width: 30vw;
+    color: #202020;
+    font-weight: 500;
+    font-size: 3vw;
+    border-radius: 15px;
   }
   .carousel-caption2,
   .carousel-caption3 {
@@ -338,16 +390,26 @@ footer .link-maps {
   } */
 
   /* ===================== Carousel ===================== */
-  .carousel-item:before {
-    content: "";
-    background: rgba(16, 16, 16, 0.3);
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
+  .carousel-caption h4{
+    font-size: 5.5vw;
+    font-weight: 600;
   }
-  .carousel-caption2,
+  .carousel-caption p{
+    margin-top: 15px;
+    font-size: 3.5vw;
+  }
+  .carousel-caption a{
+    margin-top: 15px;
+    background-color: #b6ccfe;
+    border: none;
+    width: 40vw;
+    color: #202020;
+    font-weight: 500;
+    font-size: 4vw;
+    border-radius: 10px;
+  }
+
+  /* .carousel-caption2,
   .carousel-caption3 {
     margin-top: 0;
   }
@@ -372,7 +434,7 @@ footer .link-maps {
   .slide-images {
     width: 280vw;
     height: 93vh;
-  }
+  } */ */
 
   /* ======================= Slider Service ======================= */
   .slider-service {
