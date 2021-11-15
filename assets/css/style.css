@@ -150,76 +150,18 @@ body .navbar {
 }
 .carousel-caption p{
   margin-top: 20px;
-  font-size: 1.5vw;
+  font-size: 1.3vw;
 }
 .carousel-caption a{
   margin-top: 20px;
   background-color: #b6ccfe;
   border: none;
-  width: 20vw;
+  width: 15vw;
   color: #202020;
   font-weight: 500;
-  font-size: 1.5vw;
-  border-radius: 10px;
+  font-size: 1.4vw;
+  border-radius: 20px;
 }
-/* .slide-images {
-  width: 100vw;
-  height: 100vh;
-}
-.carousel-item:before {
-  content: "";
-  background: rgba(16, 16, 16, 0.5);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-} */
-/* .carousel-caption {
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 11vw;
-  padding: 0 5em;
-} */
-/* .carousel-caption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-.carousel-caption2,
-.carousel-caption3 {
-  margin-top: 11.4vw;
-}
-.carousel-caption h5 {
-  font-size: 2.5vw;
-  white-space: nowrap;
-  text-transform: uppercase;
-}
-.carousel-caption p {
-  margin-top: 3vw;
-  padding: 0 2em;
-  font-weight: 200;
-  text-align: center;
-  font-size: 1.3vw;
-}
-
-.carousel-caption .btn-primary {
-  margin-top: 5vw;
-  padding: 10px;
-  width: 12vw;
-  border-radius: 2em;
-  font-size: 0.1vw;
-  color: #202020;
-  font-weight: 500;
-  background-color: #b6ccfe;
-} */
 
 /* ------------------------Slider Service------------------------------- */
 .slider-service,
