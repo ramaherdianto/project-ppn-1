@@ -296,7 +296,7 @@ footer .link-maps {
     width: 30vw;
     color: #202020;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 2.5vw;
     border-radius: 15px;
   }
   .carousel-caption2,
@@ -351,32 +351,6 @@ footer .link-maps {
     border-radius: 10px;
   }
 
-  /* .carousel-caption2,
-  .carousel-caption3 {
-    margin-top: 0;
-  }
-  .carousel-caption h5 {
-    padding: 0 -3em;
-    font-size: 7vw;
-    white-space: pre-wrap;
-    text-transform: uppercase;
-  }
-  .carousel-caption p {
-    margin-top: 4vw;
-    font-weight: 200;
-    font-size: 3vw;
-  }
-  .carousel-caption .btn-primary {
-    margin-top: 10vw;
-    padding: 10px;
-    width: 45vw;
-    border-radius: 10px;
-    font-size: 5vw;
-  }
-  .slide-images {
-    width: 280vw;
-    height: 93vh;
-  } */ */
 
   /* ======================= Slider Service ======================= */
   .slider-service {
