@@ -219,8 +219,15 @@ body .navbar {
 .bottom-service p {
   line-height: 2;
 }
-.bottom-service button {
+.bottom-service .btn-primary {
   margin-top: 20px;
+  background-color: #b6ccfe;
+  border: none;
+  width: 12vw;
+  border-radius: 10px;
+  font-size: 1.3vw;
+  color: #202020;
+  font-weight: 500;
 }
 
 /* ================= Footer ================= */
@@ -407,11 +414,9 @@ footer .link-maps {
   .bottom-service {
     text-align: center;
   }
-  .bottom-service button {
-    margin-top: 30px;
-  }
 
   .bottom-service .btn-primary {
+    margin-top: 30px;
     background-color: #b6ccfe;
     border: none;
     width: 45vw;
